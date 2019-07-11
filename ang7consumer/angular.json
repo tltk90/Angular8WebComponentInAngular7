@@ -32,7 +32,11 @@
             "styles": [
               "src/styles.less"
             ],
-            "scripts": []
+            "scripts": [
+              {
+                "input": "src/scripts/main-es2015.js"
+              }
+            ]
           },
           "configurations": {
             "production": {
