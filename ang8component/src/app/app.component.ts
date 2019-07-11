@@ -12,9 +12,11 @@ import {Component, EventEmitter, Input, Output, ViewEncapsulation} from '@angula
     <li>{{item4}}</li>
     </ul>
     </div>
+    <div class="button">
       <button (click)="exportList()">
         export list
       </button>
+    </div>
   `,
   styles: [
       `
@@ -34,9 +36,14 @@ import {Component, EventEmitter, Input, Output, ViewEncapsulation} from '@angula
         ul:first-child, ul:last-child {
           text-decoration: underline;
         }
-        button{
-          border-radius: 100%;
+        div.button{
+          display: inline-flex;
           -webkit-box-shadow: 1px 3px 3px 6px #000;-moz-box-shadow: 1px 3px 3px 6px #000;box-shadow: 1px 3px 3px 6px #000;
+          border-radius: 100%;
+        }
+        div.button button {
+          background-color: transparent;
+          border: none;
         }
     `
   ],
