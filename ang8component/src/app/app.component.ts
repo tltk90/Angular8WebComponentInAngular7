@@ -1,7 +1,7 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import {Component, EventEmitter, Input, Output, ViewEncapsulation} from '@angular/core';
 
 @Component({
-  // selector: 'app-root',
+  selector: 'ang8-element',
   template: `
     <h1>Custome component</h1>
     <div>
@@ -16,7 +16,31 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
         export list
       </button>
   `,
-  styles: []
+  styles: [
+      `
+      h1 {
+        background-color: #aed4a1;
+        color: #99f1ee;
+      }
+        div{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-content: center;
+        }
+        li{
+          font-style: italic;
+        }
+        ul:first-child, ul:last-child {
+          text-decoration: underline;
+        }
+        button{
+          border-radius: 100%;
+          -webkit-box-shadow: 1px 3px 3px 6px #000;-moz-box-shadow: 1px 3px 3px 6px #000;box-shadow: 1px 3px 3px 6px #000;
+        }
+    `
+  ],
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class AppComponent {
   @Input() item1: string;
