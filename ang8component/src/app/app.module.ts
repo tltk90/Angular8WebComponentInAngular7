@@ -23,7 +23,7 @@ export class AppModule {
       const el = createCustomElement(AppComponent, {injector: this.injector});
       customElements.define('ang8-element', el);
     }catch (e) {
-      console.error('unable define element ' , e.getMessages());
+      console.error('unable define element ' , e.getMessage());
     }
   }
 }
