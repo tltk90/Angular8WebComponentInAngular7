@@ -33,6 +33,9 @@
               "src/styles.less"
             ],
             "scripts": [
+              {
+                "input": "src/scripts/main-es2015.js"
+              }
             ]
           },
           "configurations": {

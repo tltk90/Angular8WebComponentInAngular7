@@ -24,9 +24,8 @@ export class AppComponent implements OnInit{
 
 
   ngOnInit(){
-    console.log(this.el)
     this.el.nativeElement.addEventListener('export', (exporter) => {
-      console.log(exporter)
+      console.log(exporter);
       this.fromExporter = exporter.detail;
     });
   }
