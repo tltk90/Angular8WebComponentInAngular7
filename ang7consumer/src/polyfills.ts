@@ -39,14 +39,15 @@ import 'core-js/es7/object';
 /** Evergreen browsers require these. **/
 import 'core-js/es6/reflect';
 import 'core-js/es7/reflect';
+
+
 /** ALL Firefox browsers require the following to support `@angular/animation`. **/
 // import 'web-animations-js';  // Run `npm install --save web-animations-js`.
 /***************************************************************************************************
  * Zone JS is required by Angular itself.
  */
 import 'zone.js/dist/zone'; // Included with Angular CLI.
-
-
+import '@webcomponents/custom-elements/custom-elements.min'
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
@@ -57,4 +58,4 @@ import 'zone.js/dist/zone'; // Included with Angular CLI.
  */
 // import 'intl';  // Run `npm install --save intl`.
 (window as any).global = window;
-import 'src/scripts/scripts';
+ import 'src/scripts/scripts';
